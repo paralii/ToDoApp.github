@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1e1e2f;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input {
+  outline: none;
+  background: #2c2c40; 
+  border: 1px solid #1e1e2f;
+  margin-bottom: 1.5rem; 
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  color: #ffffff;
+  height: 45px; 
+}
+
+.todo-input::placeholder {
+  color: #ffffff80;
+}
+
+.todo-btn {
+  background: #3f51b5; 
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem; 
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-left: 10px; 
+  height: 30px; 
+}
+
+.todo-btn:hover {
+  background: #5c6bc0; 
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c2c40;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
+}
+
+.todo-item:hover {
+  background: #3a3a50;
+}
+
+.completed {
+  color: #8e8e8e;
+  text-decoration: line-through;
+  cursor: pointer;
+  font-size: 0.9rem; 
+}
+
+.incompleted {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem; 
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.edit-button:hover {
+  color: #3f51b5; 
+}
+
+.delete-button:hover {
+  color: #ff6b6b;
+}
+
+.todo-item span {
+  flex-grow: 1; 
+  text-align: left; 
+  font-size: 1rem; 
+}
+
+
